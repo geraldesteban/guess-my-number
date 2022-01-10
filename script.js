@@ -18,6 +18,12 @@ function correctGuess() {
   correct.play();
 }
 
+window.addEventListener('DOMContentLoaded', function () {
+  const audio = document.querySelector('audio');
+  audio.volume = 5;
+  audio.play();
+});
+
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
