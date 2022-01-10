@@ -41,6 +41,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       document.querySelector('.score').textContent = score;
       document.body.style.backgroundColor = '#222';
+      wrongGuess();
     } else {
       document.querySelector('.message').textContent = '💥 You Lose The Game!';
       document.querySelector('.score').textContent = 0;
