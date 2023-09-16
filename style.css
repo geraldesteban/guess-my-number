@@ -37,7 +37,7 @@ header {
   border-bottom: 7px solid #eee;
 
   @media only screen and (max-width: 500px) {
-    height: 50vh;
+    height: 30vh;
   }
 }
 
@@ -47,6 +47,17 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media only screen and (max-width: 500px) {
+    display: block;
+    justify-content: center;
+  }
+}
+
+input {
+  @media only screen and (max-width: 500px) {
+    margin-top: 10rem;
+  }
 }
 
 .left {
@@ -54,11 +65,20 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 500px) {
+    margin: auto;
+  }
 }
 
 .right {
   width: 52rem;
   font-size: 2rem;
+
+  @media only screen and (max-width: 500px) {
+    text-align: center;
+    margin: auto;
+  }
 }
 
 /* ELEMENTS STYLE */
@@ -90,12 +110,22 @@ h1 {
   position: absolute;
   top: 2rem;
   right: 2rem;
+
+  @media only screen and (max-width: 500px) {
+    top: 12rem;
+    right: 5rem;
+  }
 }
 
 .again {
   position: absolute;
   top: 2rem;
   left: 2rem;
+
+  @media only screen and (max-width: 500px) {
+    top: 10rem;
+    left: 5rem;
+  }
 }
 
 .guess {
@@ -119,6 +149,10 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 5rem;
+  }
 }
 
 .btn:hover {
